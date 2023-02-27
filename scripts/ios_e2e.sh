@@ -4,7 +4,7 @@ RESOURCE_DIR="$PWD/example/ios/build/Build/Products/Release-iphonesimulator/Reac
 ENTRY_FILE="example/index.ts"
 BUNDLE_FILE="$RESOURCE_DIR/main.jsbundle"
 EXTRA_PACKAGER_ARGS="--entry-file=$ENTRY_FILE"
-SIMULATOR_NAME="iPhone 11"
+SIMULATOR_NAME="iPhone 13"
 
 build_project() {
   echo "[Detox e2e] Building iOS project"
@@ -19,7 +19,6 @@ build_project() {
 }
 
 run_simulator() {
-
   # Find simulator
   devDir=`xcode-select -p`
   devDir=$devDir/Applications/Simulator.app
